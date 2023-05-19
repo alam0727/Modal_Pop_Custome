@@ -1,0 +1,514 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-light .navbar-brand {
+    border: 1px solid #ffe660;
+    padding: 0 25px;
+    background-color: #ffd90d;
+    border-radius: 5px;
+    color: #fff!important;
+    font-weight: 600;
+}
+main.body-content {
+    background-color: #f0f0fa;
+    width: 100%;
+    height: 100vh;
+}  
+  /*====================== profile card page css code ===================*/
+  .profile-user-card {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 1em;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+  }
+  
+  .user-image{
+    padding: 3em 0;
+    background-color: #ffd90d;
+  }
+  
+  .user-image img{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    box-shadow:  0 0.6em 1.8em ;
+    object-fit: cover;
+  }
+  
+  .profile-user-card .content{
+    color: #565656;
+    padding: 3.2em 2.2em;
+  }
+  
+  .profile-user-card .name{
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  
+  .profile-user-card .username{
+    font-size: 1em;
+    color: #9e9e9e;
+  }
+  
+  .profile-user-card .links{
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0;
+  }
+  
+  .profile-user-card a{
+    text-decoration: none;
+    color: #565656;
+    transition: all 0.3s;
+    font-size: 2em;
+    margin-right: 1.2em;
+  }
+  
+  .profile-user-card a:last-child{
+    margin: 0;
+  }
+  
+  .profile-user-card .insta:hover{
+    color:rgb(255, 70, 101);
+    transform: scale(2,2);
+  }
+  
+  .profile-user-card .git:hover{
+    color:rgb(0, 0, 0);
+    transform: scale(2,2);
+  }
+  
+  .profile-user-card .linkedin:hover{
+    color:rgba(4, 0, 253, 0.842);
+    transform: scale(2,2);
+  }
+  
+  .profile-user-card .facebook:hover{
+    color:rgb(4, 0, 255);
+    transform: scale(2,2);
+  }
+  
+  .profile-user-card .details{
+    margin-bottom: 1.8em;
+  }
+  
+  
+  /* CSS for messagin link */
+  
+  .profile-user-card .effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #ffd90d;
+    font-size: 1.5em;
+    padding: 0.5em 3em;
+    border-radius: 5em;
+    overflow: hidden;
+  }
+  
+  .profile-user-card .effect.effect-4:before {
+    content: "\f044";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    transform: scale(0, 1);
+  }
+  .profile-user-card .effect.effect-4:hover {
+    text-indent: -9999px;
+  }
+    
+  .profile-user-card .effect.effect-4:hover:before {
+    transform: scale(1, 1);
+    text-indent: 0;
+  }
+  
+  .profile-user-card .effect.effect-5:before {
+    content: "\f067";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    transform: scale(0, 1);
+  }
+  .profile-user-card .effect.effect-5:hover {
+    text-indent: -9999px;
+  }
+    
+  .profile-user-card .effect.effect-5:hover:before {
+    transform: scale(1, 1);
+    text-indent: 0;
+  }
+  /*====================== profile card page css code ===================*/
+  
+  /*====================== Plans page css code ===================*/
+  .effect-7:hover, .effect-8:hover {
+    background-color: transparent;
+    color: #ffd43b;
+    border: 1px solid #ffd43b;
+  }
+  .modal-pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 999;
+    background-color: #fff;
+    max-width: 100%;
+    display: none;
+  }
+  .content-body, .content-body-part {
+    border: 1px solid #d3cccc;
+    max-width: 860px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 3px 5px 24px #d3cccc;
+    border-radius: 5px;
+    padding: 30px;
+    transition: 0.6;
+  }
+  .content-body {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+  }
+  @-webkit-keyframes zoom {
+    from {transform: scale(0);}
+    to{transform: scale(1);}
+  }
+  @keyframes zoom {
+    from {transform: scale(0);}
+    to{transform: scale(1);}
+  }
+  
+  
+  
+  .content-body-part {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .one-div-content, .two-div-content {
+    width: 49%;
+  }
+  .one-div-content {
+    border-right: 1px solid #d3cccc;
+  }
+  .icon-success img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+  }
+  .icon-success {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .currentplan {
+    padding-left: 10px;
+  }
+  .currentplan p, .two-div-content p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .currentplan p b {
+    color: #ffd43b;
+    font-size: 20px;
+    letter-spacing: 7px;
+  }
+  
+  .pere-one, .pere-two, .pere-three {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  .pere-one {
+    margin: 18px 0;
+    display: block;
+  }
+  .pere-two {
+    color: #000;
+  }
+  .header-part h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .header-part p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  #close-btn {
+    font-size: 36px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  #close-btn1 {
+    font-size: 36px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  #close-btn:hover, #close-btn1:hover {
+    opacity: 1;
+  }
+  .switch-pan-a {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    border: 1px solid #ffd43b;
+    font-size: 18px!important;
+    padding: 5px 15px;
+    margin-top: 50px!important;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffd43b;
+    color: #fff!important;
+  }
+  .switch-pan-a:hover {
+    background-color: transparent;
+    color: #ffd43b!important;
+  }
+  .cancel-modal-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-content-modal {
+    width: 30%;
+  }
+  .right-content-modal {
+    width: 70%;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  .right-content-modal h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffd43b;
+  }
+  .right-content-modal p {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .twoBtn button {
+    all: unset;
+    border: 1px solid #ffd43b;
+    padding: 5px 45px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #ffd43b;
+    color: #fff!important;
+    cursor: pointer;
+  }
+  .twoBtn button.cancel {
+    all: unset;
+    border: 1px solid #ffd43b;
+    padding: 5px 45px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #000!important;
+    cursor: pointer;
+  }
+  .twoBtn button:hover {
+    background-color: transparent;
+    color: #ffd43b!important;
+  }
+  .twoBtn button.cancel:hover {
+    background-color: #ffd43b;
+    color: #fff!important;
+  }
+  .left-content-modal img {
+    width: auto;
+    height: auto;
+  }
+  /*====================== Plans page css code ===================*/
+  
+  /* ========= add new syntex only mobile and table and  dasktop devices : 1024px ========= */
+  @media screen and (max-width: 1024px)  {
+    .modal-pop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      z-index: 999;
+      background-color: #fff;
+      max-width: 100%;
+      margin-left: 0;
+      display: none;
+  }
+  
+  }
+  
+  /* ========= add new syntex only mobile devices : 767px ========= */
+  @media screen and (max-width: 1199px)  {
+    .Summary-page.mt-3 .row .col-12 {
+        padding: 10px 15px!important;
+    }
+    main.body-content {
+      height: 100%;
+    }
+    .Summary-page .row {
+      height: 100%!important;
+    }
+    .Summary-page {
+        padding: 50px;
+    }
+  .profile-user-card .effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #ffd90d;
+    font-size: 1.5em;
+    padding: 5px 15px;
+    border-radius: 5em;
+    overflow: hidden;
+}
+  
+  }
+  @media screen and (max-width: 991px) {
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+      justify-content: center!important;
+      margin: 10px 0!important;
+    }
+    .spacing-div {
+      height: 50px;
+      display: block;
+      width: 100%;
+    }
+    table.report_datatable thead tr th div.reportname100, table.earning_datatable thead tr th div.reportname100 {
+      width: 100px!important;
+      display: block;
+      border: 0;
+    }
+    table.report_datatable thead tr th div.reportAddress150, table.earning_datatable thead tr th div.Transation150 {
+      width: 150px!important;
+      display: block;
+      border: 0;
+    }
+    .ms-navbar .ms-form input.ms-form-input {
+          width: 100%;
+      max-width: 200px;
+      }
+  }
+  
+  @media screen and (max-width: 767px) {
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+      justify-content: center!important;
+      margin: 10px 0!important;
+    }
+    .Summary-page.mt-3 h1 {
+      font-size: 28px;
+    } 
+    .spacing-div {
+      height: 50px;
+      display: block;
+      width: 100%;
+    }
+    table.report_datatable thead tr th div.reportname100, table.earning_datatable thead tr th div.reportname100 {
+      width: 100px!important;
+      display: block;
+      border: 0;
+    }
+    table.report_datatable thead tr th div.reportAddress150, table.earning_datatable thead tr th div.Transation150 {
+      width: 150px!important;
+      display: block;
+      border: 0;
+    }
+    .table-transation-li table thead tr th:nth-child(2) > div, 
+    .table-transation-li table thead tr th:nth-child(3) > div, 
+    .table-transation-li table thead tr th:nth-child(3) > div,
+    .table-transation-li table thead tr th:nth-child(4) > div
+     {
+      width: 150px!important;
+      display: block!important;
+    }
+    .table-transation-li table thead tr th:nth-child(5) > div,
+    .table-transation-li table thead tr th:nth-child(6) > div {
+      width: 100px!important;
+      display: block!important;
+    }
+    .table-transation-li table thead tr th:nth-child(7) > div {
+      width: 250px!important;
+      display: block!important;
+    }
+    .Summary-page .row .col-12 {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .content-body-part {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      flex-direction: column;
+  }
+  .one-div-content, .two-div-content {
+    width: 100%;
+  }
+  .one-div-content {
+    border-right: 0;
+  }
+  .header-part h2 {
+    margin-top: 35px;
+    font-size: 28px;
+  }
+  .cancel-modal-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .right-content-modal {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  .left-content-modal {
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .Summary-page .row .col-12:first-child {
+    margin-top: 30px;
+  }
+  }
+  /* ========= add new syntex only mobile devices : 767px ========= */
